@@ -70,7 +70,7 @@ public class MainActivity extends AppCompatActivity {
                     float num1 = Float.parseFloat(first.getText().toString());
                     float num2 = Float.parseFloat(second.getText().toString());
                     float res = num1 * num2;
-                    result.setText(res + "");
+                    result.setText(res + ""); 
                 }
             }
         });
