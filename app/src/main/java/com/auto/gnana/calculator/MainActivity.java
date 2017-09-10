@@ -6,6 +6,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -25,8 +26,8 @@ public class MainActivity extends AppCompatActivity {
                 EditText second = (EditText) findViewById(R.id.second);
                 TextView result = (TextView) findViewById(R.id.result);
 
-                if (first.getText()== null || second.getText()== null) {
-                    result.setText("Enter input");
+                if (first.getText().toString().length()== 0 || second.getText().toString().length()== 0) {
+                    Toast.makeText(MainActivity.this,"Enter the inputs first",Toast.LENGTH_LONG).show();
                 }
                 else {
                     float num1 = Float.parseFloat(first.getText().toString());
@@ -44,8 +45,8 @@ public class MainActivity extends AppCompatActivity {
                 EditText second = (EditText) findViewById(R.id.second);
                 TextView result = (TextView) findViewById(R.id.result);
 
-                if (first.getText()== null || second.getText()== null) {
-                    result.setText("Enter input");
+                if (first.getText().toString().length()== 0 || second.getText().toString().length()== 0) {
+                    Toast.makeText(MainActivity.this,"Enter the inputs first",Toast.LENGTH_LONG).show();
                 }
                 else {
                     float num1 = Float.parseFloat(first.getText().toString());
@@ -63,14 +64,14 @@ public class MainActivity extends AppCompatActivity {
                 EditText second = (EditText) findViewById(R.id.second);
                 TextView result = (TextView) findViewById(R.id.result);
 
-                if (first.getText()== null || second.getText()== null) {
-                    result.setText("Enter input");
+                if (first.getText().toString().length()== 0 || second.getText().toString().length()== 0) {
+                    Toast.makeText(MainActivity.this,"Enter the inputs first",Toast.LENGTH_LONG).show();
                 }
                 else {
                     float num1 = Float.parseFloat(first.getText().toString());
                     float num2 = Float.parseFloat(second.getText().toString());
                     float res = num1 * num2;
-                    result.setText(res + ""); 
+                    result.setText(res + "");
                 }
             }
         });
